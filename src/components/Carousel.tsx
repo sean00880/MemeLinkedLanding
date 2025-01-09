@@ -119,8 +119,8 @@ const CarouselSection: React.FC = () => {
             <div className="absolute flex flex-col inset-0 top-[13%] left-[13%] w-[74%] h-[62%] overflow-hidden rounded-md">
               <CldImage
                 src={slides[currentIndex].image}
-                width="800"
-                height="500"
+                width="700"
+                height="450"
                 alt="MemeLinked | 2025"
                 crop="fill"
                 className="transition-opacity duration-500 ease-in-out"
