@@ -109,11 +109,11 @@ const CarouselSection: React.FC = () => {
           {/* Laptop Mockup */}
           <div className="relative">
             <Image
-              src="/images/laptopmock.webp"
+              src="/images/laptopmock.png"
               alt="Laptop Mockup"
               width={800}
               height={500}
-              className="rounded-lg shadow-xl"
+              className="rounded-lg "
             />
             {/* Changing Screen Image */}
             <div className="absolute flex flex-col inset-0 top-[13%] left-[13%] w-[74%] h-[62%] overflow-hidden rounded-md">
