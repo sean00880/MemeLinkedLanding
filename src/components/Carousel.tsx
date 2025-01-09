@@ -116,11 +116,11 @@ const CarouselSection: React.FC = () => {
               className="rounded-lg "
             />
             {/* Changing Screen Image */}
-            <div className="absolute flex flex-col inset-0 top-[13%] left-[13%] w-[74%] h-[62%] overflow-hidden rounded-md">
+            <div className="absolute flex flex-col inset-0 top-[13%] left-[13%] w-[69%] h-[58%] overflow-hidden rounded-md">
               <CldImage
                 src={slides[currentIndex].image}
-                width="700"
-                height="450"
+                width="800"
+                height="500"
                 alt="MemeLinked | 2025"
                 crop="fill"
                 className="transition-opacity duration-500 ease-in-out"
