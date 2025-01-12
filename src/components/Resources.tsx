@@ -134,6 +134,20 @@ const ResourcesSection: React.FC = () => {
                     Read more →
                   </Link>
                 </div>
+                <div className="p-4 bg-black/80 border border-green-500 rounded-lg shadow-lg">
+                  <h4 className="text-xl font-semibold italic text-purple-400 mb-2">
+                  Security and Best Practices in MemeLinked
+                  </h4>
+                  <p className="text-gray-300">
+                    Learn how to stay safe online while browsing and exploring tools on the blockchain.
+                  </p>
+                  <Link
+                    href="/docs/security-best-practices"
+                    className="text-white hover:text-green-300 mt-2 inline-block transition"
+                  >
+                    Read more →
+                  </Link>
+                </div>
               </div>
             </div>
           )}
