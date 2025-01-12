@@ -139,7 +139,7 @@ const CarouselSection: React.FC = () => {
 
         {/* Dynamic Description */}
         <div className="mt-6">
-          <p className="text-md font-medium text-gray-300 max-w-xl mx-auto">
+            <p className="text-md font-medium text-gray-300 max-w-md mx-auto">
             {slides[currentIndex].description}
           </p>
         </div>
