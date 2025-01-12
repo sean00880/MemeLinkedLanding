@@ -6,7 +6,7 @@ import Link from "next/link";
 const HeroSection: React.FC = () => {
   return (
     <section
-      className=" flex items-center justify-center h-screen bg-cover bg-center relative"
+      className=" flex items-center justify-center min-h-screen bg-cover bg-center relative"
       style={{
         backgroundImage: "url('/images/ML11.webp')", // Full-screen background pattern image
         backgroundPosition: "center",
@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent bg-opacity-90"></div>
 
       {/* Main Content Container */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full max-w-7xl px-6 md:px-12 space-y-8 md:space-y-0 md:space-x-8">
+      <div className="relative z-10 mt-20 md:mt-0 min-h-screen flex flex-col md:flex-row items-center justify-center w-full max-w-7xl px-6 md:px-12 space-y-8 md:space-y-0 md:space-x-8">
         {/* Left Column: Presale Widget */}
         <div
     className="presale-widget flex flex-col justify-center items-center p-8 bg-white/90 backdrop-blur-lg rounded-xl shadow-xl text-center w-full md:w-1/2"
