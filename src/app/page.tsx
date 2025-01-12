@@ -16,7 +16,7 @@ import CarouselSection from "@components/Carousel";
 const features = [
   {
     title: "The Ultimate Lifeform",
-    shortText: "MemeLinked leads the Sonic Chain with unmatched power.",
+    shortText: "MemeLinked leads the Meme Space with unmatched power.",
     expandedText:
       "Designed as the ultimate lifeform, MemeLinked brings unparalleled strength and resilience to the Sonic Chain. His legacy as a symbol of determination inspires innovation and progress in decentralized technology.",
     image: "/images/shadow1.jpg",
