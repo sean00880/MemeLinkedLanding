@@ -114,7 +114,7 @@ const ResourcesSection: React.FC = () => {
                     Learn about the utilities, vision, and growth plans of MemeLinked.
                   </p>
                   <Link
-                    href="/docs/overview"
+                    href="/docs/platform-overview"
                     className="text-white hover:text-green-300 mt-2 inline-block transition"
                   >
                     Read more →
@@ -128,7 +128,7 @@ const ResourcesSection: React.FC = () => {
                     Understand how to interact securely with the MemeLinked ecosystem.
                   </p>
                   <Link
-                    href="/docs/security-best-practices"
+                    href="/docs/navigate-dapp"
                     className="text-white hover:text-green-300 mt-2 inline-block transition"
                   >
                     Read more →

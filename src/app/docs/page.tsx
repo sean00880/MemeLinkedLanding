@@ -1,14 +1,14 @@
 export default function DocumentationPage() {
   const docs = [
-    { title: 'BTCRT Platform Overview', href: '/docs/platform-overview' },
-    { title: 'How to Navigate the BTCRT dApp', href: '/docs/navigate-dapp' },
-    { title: 'Security and Best Practices in BTCRT', href: '/docs/security-best-practices' },
+    { title: 'MemeLinked Platform Overview', href: '/docs/platform-overview' },
+    { title: 'How to Navigate the MemeLinked dApp', href: '/docs/navigate-dapp' },
+    { title: 'Security and Best Practices in MemeLinked', href: '/docs/security-best-practices' },
   ];
 
   return (
     <section className="flex flex-col md:pl-10 lg:ml-[25%]">
-      <h1 className="text-3xl font-bold mb-4">Welcome to the BTCRT Documentation</h1>
-      <p className="mb-6">Access comprehensive guides and insights about how to use BTCRT effectively...</p>
+      <h1 className="text-3xl font-bold mb-4">Welcome to the MemeLinked Documentation</h1>
+      <p className="mb-6">Access comprehensive guides and insights about how to use MemeLinked effectively...</p>
 
       {/* Documentation Content */}
       <div className="docs-section mt-8 space-y-6">
@@ -17,7 +17,7 @@ export default function DocumentationPage() {
             <h2 className="text-2xl font-semibold mb-2">{doc.title}</h2>
             <p className="text-gray-300">
               Learn more about {doc.title} to get detailed insights, instructions, and best practices for utilizing the
-              BTCRT platform and enhancing your DeFi experience.
+              MemeLinked platform and enhancing your DeFi experience.
             </p>
             <a
               href={doc.href}
