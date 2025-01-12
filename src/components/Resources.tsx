@@ -122,7 +122,7 @@ const ResourcesSection: React.FC = () => {
                 </div>
                 <div className="p-4 bg-black/80 border border-green-500 rounded-lg shadow-lg">
                   <h4 className="text-xl font-semibold italic text-purple-400 mb-2">
-                    Security Best Practices
+                  How to Navigate the MemeLinked dApp
                   </h4>
                   <p className="text-gray-300">
                     Understand how to interact securely with the MemeLinked ecosystem.
