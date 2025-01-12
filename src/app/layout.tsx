@@ -22,7 +22,7 @@ const geistMono = localFont({
 });
 
 const posts = [
-  { title: "How BTCRT Integrates DeFi and Social Networking", href: "/blog/defi-social-networking" },
+  { title: "How MemeLinked Integrates DeFi and Social Networking", href: "/blog/defi-social-networking" },
   { title: "GameFi’s Role in the BTCRT Ecosystem", href: "/blog/gamefi-role" },
   { title: "The Future of Meme-Driven Finance", href: "/blog/meme-finance-future" },
 ];
