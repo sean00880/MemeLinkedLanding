@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="mt-8 text-center text-gray-200 border-t border-gray-200 pt-4">
+      <div className="mt-8 text-center text-gray-100 border-t border-gray-200 pt-4">
         &copy; 2024 | $MEMELINKED | by PabloCRO |  All rights reserved.
       </div>
     </footer>
