@@ -89,7 +89,7 @@ const HeroSection: React.FC = () => {
                 className="socials border-2 border-purple-400 hover:scale-110 hover:drop-shadow-lg transition-transform rounded-full"
               />
             </Link>
-            <Link href="https://t.me/memelinked">
+            <Link href="https://t.me/memelinkedportal">
               <Image
                 src="/icons/telegram.png"
                 width={50}
