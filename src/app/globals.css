@@ -375,29 +375,30 @@ nav a{
   animation: fade-in-up 0.5s ease-out forwards;
 }
 
-.hero-section .animate-glitch {
+.animate-glitch {
   position: relative;
   display: inline-block;
-  color: rgb(234 179 8 / var(--tw-bg-opacity));
+  color:rgb(232 232 232);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   font-family: 'Genty';
   font-size: 47px;
   margin: 0 5px;
   font-weight: 200;
-  letter-spacing: 4px;
+  letter-spacing: 0px;
 }
 
-.hero-section .animate-glitch2 {
+ .animate-glitch2 {
   position: relative;
   display: inline-block;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   font-family: 'Dragen';
   margin:0 5px;
+  letter-spacing: 5px;
 }
 
-.hero-section .animate-glitch::after,
-.hero-section .animate-glitch::before {
+ .animate-glitch::after,
+ .animate-glitch::before {
   content: 'Meme';
   position: absolute;
   top: 0;
@@ -408,8 +409,8 @@ nav a{
   clip: rect(0, 900px, 0, 0);
 }
 
-.hero-section .animate-glitch2::after,
-.hero-section .animate-glitch2::before {
+ .animate-glitch2::after,
+ .animate-glitch2::before {
   content: 'LINKED';
   position: absolute;
   top: 0;
@@ -418,15 +419,16 @@ nav a{
   height: 100%;
   opacity: 0.75;
   clip: rect(0, 900px, 0, 0);
+  letter-spacing: 5px;
 }
 
-.hero-section .animate-glitch::after {
-  color: #ffd56a;
+ .animate-glitch::after {
+  color: #e3ffdb;
   animation: glitch-anim 2s infinite linear alternate-reverse;
 }
 
-.hero-section .animate-glitch2::after {
-  color: #bffba8;
+ .animate-glitch2::after {
+  color: #8eee8e;
   animation: glitch-anim 2s infinite linear alternate-reverse;
 }
 
