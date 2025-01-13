@@ -103,7 +103,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ images }) => {
           <aside className="flex-none w-full md:w-48 mb-4 md:mb-0 md:mr-4">
             <button
               className={`tab-button w-full px-4 py-2 my-2 text-left ${
-                aboutActiveTab === 'defi' ? 'bg-green-600 italic glassmorphism-effect text-white  rounded-[30px]' : 'bg-black rounded-[10px] text-white hover:bg-white  hover:text-black'
+                aboutActiveTab === 'defi' ? 'bg-green-600 italic glassmorphism-effect text-white  rounded-[30px]' : 'bg-black rounded-[30px] text-white hover:bg-white  hover:text-black'
               }`}
               onClick={() => setAboutActiveTab('defi')}
             >
@@ -111,7 +111,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ images }) => {
             </button>
             <button
               className={`tab-button w-full px-4 py-2 my-2 text-left rounded-sm ${
-                aboutActiveTab === 'gamefi' ? 'bg-green-600 glassmorphism-effect text-white italic rounded-[30px]' : 'bg-black rounded-[10px] text-white hover:bg-white  hover:text-black'
+                aboutActiveTab === 'gamefi' ? 'bg-green-600 italic glassmorphism-effect text-white rounded-[30px]' : 'bg-black rounded-[30px] text-white hover:bg-white  hover:text-black'
               }`}
               onClick={() => setAboutActiveTab('gamefi')}
             >
@@ -119,7 +119,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ images }) => {
             </button>
             <button
               className={`tab-button w-full px-4 py-2 my-2 text-left rounded-sm ${
-                aboutActiveTab === 'memes' ? 'bg-green-600 glassmorphism-effect text-white italic rounded-[30px]' : 'bg-black rounded-[10px] text-white hover:bg-white hover:text-black'
+                aboutActiveTab === 'memes' ? 'bg-green-600 italic glassmorphism-effect text-white rounded-[30px]' : 'bg-black rounded-[30px] text-white hover:bg-white hover:text-black'
               }`}
               onClick={() => setAboutActiveTab('memes')}
             >

@@ -146,7 +146,7 @@ const CarouselSection: React.FC = () => {
 
         {/* Quadrants Layout for lg and Above */}
         <div className="relative flex flex-col gap-4 lg:block ">
-          <div className="relative lg:absolute lg:top-[20vh] lg:left-[5%] w-[100%] lg:w-[35%] xl:w-[20%]">
+          <div className="relative lg:absolute lg:top-[15vh] xl:top-[10vh] lg:left-[5%] w-[100%] lg:w-[35%] xl:w-[30%]">
             <div className="neumorphic-card">
               <h4 className="text-lg font-bold text-green-400">
                 {slides[currentIndex].features[0].title}
@@ -156,7 +156,7 @@ const CarouselSection: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="relative lg:absolute lg:top-[20vh] lg:right-[5%] w-[100%] lg:w-[35%] xl:w-[20%]">
+          <div className="relative lg:absolute lg:top-[15vh] xl:top-[10vh] lg:right-[5%] w-[100%] lg:w-[35%] xl:w-[30%]">
             <div className="neumorphic-card">
               <h4 className="text-lg font-bold text-green-400">
                 {slides[currentIndex].features[1].title}
@@ -166,7 +166,7 @@ const CarouselSection: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="relative lg:absolute xl:bottom-[30%] lg:left-[5%] w-[100%] lg:w-[35%] xl:w-[20%]">
+          <div className="relative lg:absolute xl:bottom-[35%] lg:left-[5%] w-[100%] lg:w-[35%] xl:w-[30%]">
             <div className="neumorphic-card">
               <h4 className="text-lg font-bold text-green-400">
                 {slides[currentIndex].features[2].title}
@@ -176,7 +176,7 @@ const CarouselSection: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="relative lg:absolute xl:bottom-[35%] lg:right-[5%] w-[100%] lg:w-[35%] xl:w-[20%]">
+          <div className="relative lg:absolute xl:bottom-[35%] lg:right-[5%] w-[100%] lg:w-[35%] xl:w-[30%]">
             <div className="neumorphic-card">
               <h4 className="text-lg font-bold text-green-400">
                 {slides[currentIndex].features[3].title}
