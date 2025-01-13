@@ -24,7 +24,7 @@ const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({ children, pos
         <Sidebar posts={posts} />
         
         {/* Main content area */}
-        <main className="bg-background text-foreground flex-grow p-4">
+        <main className="bg-background text-foreground flex-grow p-4 w-full">
           {children}
         </main>
       </div>

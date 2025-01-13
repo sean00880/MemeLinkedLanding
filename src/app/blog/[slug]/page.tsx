@@ -9,7 +9,7 @@ const posts = [
     href: 'defi-social-networking',
     content: (
       <>
-        <div className="lg:ml-[26%] mt-[10vh] items-center justify-center flex flex-col p-6 glassmorphism rounded-xl shadow-2xl backdrop-blur-lg transition-transform hover:shadow-glow">
+        <div className="lg:ml-[26%] items-center justify-center flex flex-col p-6 glassmorphism rounded-xl shadow-2xl backdrop-blur-lg transition-transform hover:shadow-glow">
         <Image
     src="/images/ML7.png"
     alt="DeFi and Social Networking"
@@ -33,7 +33,7 @@ const posts = [
     className="rounded-lg shadow-lg transform hover:scale-105 my-10 transition-transform duration-500"
     style={{ boxShadow: '0 10px 30px rgba(0, 0, 0, 0.4)' }}
   />
-  <div className="flex gap-6 items-center">
+  <div className="flex gap-6 flex-col md:flex-row items-center">
     <div className="relative overflow-hidden flex-shrink-0">
       <Image
         src="/images/ML9.webp"
@@ -125,7 +125,7 @@ const posts = [
     href: 'gamefi-role',
     content: (
       <>
-        <div className="lg:ml-[26%] mt-[10vh] items-center justify-center flex flex-col p-6 glassmorphism rounded-xl shadow-2xl backdrop-blur-lg transition-transform hover:shadow-glow">
+        <div className="lg:ml-[26%] items-center justify-center flex flex-col md:flex-row p-6 glassmorphism rounded-xl shadow-2xl backdrop-blur-lg transition-transform hover:shadow-glow">
           <Image
             src="/images/ML6.png"
             alt="GameFi Integration"

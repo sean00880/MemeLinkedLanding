@@ -82,7 +82,7 @@ const CarouselSection: React.FC = () => {
 
   return (
     <section
-      className="carousel-section min-h-screen py-20 px-6 md:px-12 relative overflow-hidden"
+      className="carousel-section min-h-screen items-center justify-center flex flex-col py-20 px-6 lg:px-12 relative overflow-hidden"
       id="carousel"
     >
       {/* Background */}
@@ -92,7 +92,7 @@ const CarouselSection: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-95"></div>
 
       {/* Content */}
-      <div className="relative z-10 min-h-screen w-full mx-auto text-center">
+      <div className="relative z-10 flex flex-col justify-center lg:block gap-4 min-h-screen w-full mx-auto text-center">
         <h2 className="text-5xl font-extrabold mb-16 text-center w-full text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-200 to-white">
           {slides[currentIndex].title}
         </h2>
@@ -145,8 +145,8 @@ const CarouselSection: React.FC = () => {
         </div>
 
         {/* Quadrants Layout for lg and Above */}
-        <div className="relative lg:block hidden">
-          <div className="absolute top-[7vh] left-[10%] w-[20%]">
+        <div className="relative flex flex-col gap-4 lg:block ">
+          <div className="relative lg:absolute lg:top-[20vh] lg:left-[5%] w-[100%] lg:w-[35%] xl:w-[20%]">
             <div className="neumorphic-card">
               <h4 className="text-lg font-bold text-green-400">
                 {slides[currentIndex].features[0].title}
@@ -156,7 +156,7 @@ const CarouselSection: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="absolute top-[7vh] right-[10%] w-[20%]">
+          <div className="relative lg:absolute lg:top-[20vh] lg:right-[5%] w-[100%] lg:w-[35%] xl:w-[20%]">
             <div className="neumorphic-card">
               <h4 className="text-lg font-bold text-green-400">
                 {slides[currentIndex].features[1].title}
@@ -166,7 +166,7 @@ const CarouselSection: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="absolute bottom-[5%] left-[10%] w-[20%]">
+          <div className="relative lg:absolute xl:bottom-[30%] lg:left-[5%] w-[100%] lg:w-[35%] xl:w-[20%]">
             <div className="neumorphic-card">
               <h4 className="text-lg font-bold text-green-400">
                 {slides[currentIndex].features[2].title}
@@ -176,7 +176,7 @@ const CarouselSection: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="absolute bottom-[5%] right-[10%] w-[20%]">
+          <div className="relative lg:absolute xl:bottom-[35%] lg:right-[5%] w-[100%] lg:w-[35%] xl:w-[20%]">
             <div className="neumorphic-card">
               <h4 className="text-lg font-bold text-green-400">
                 {slides[currentIndex].features[3].title}

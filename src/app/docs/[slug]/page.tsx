@@ -10,7 +10,7 @@ const docs = [
     href: 'platform-overview',
     content: (
       <>
-        <div className="lg:ml-[26%] mt-[10vh] items-center justify-center flex flex-col p-6 glassmorphism rounded-xl shadow-2xl backdrop-blur-lg transition-transform hover:shadow-glow">
+        <div className="lg:ml-[26%] mt-[10vh] items-center justify-center flex flex-col glassmorphism rounded-xl shadow-2xl backdrop-blur-lg transition-transform hover:shadow-glow">
           <Image
             src="/images/preview2.png"
             alt="MemeLinked Platform Overview"
@@ -39,7 +39,7 @@ const docs = [
     href: 'navigate-dapp',
     content: (
       <>
-        <div className="lg:ml-[26%] mt-[10vh] items-center justify-center flex flex-col p-6 glassmorphism rounded-xl shadow-2xl backdrop-blur-lg transition-transform hover:shadow-glow">
+        <div className="lg:ml-[26%] mt-[10vh] w-full items-center justify-center flex flex-col glassmorphism rounded-xl shadow-2xl backdrop-blur-lg transition-transform hover:shadow-glow">
           <h2 className="text-4xl font-bold mb-6 text-red-500">DETAILED DOCUMENTATION COMING SOON</h2>
           <Image
             src="/images/navigate-dapp.png"

@@ -9,7 +9,7 @@ interface SidebarProps {
 // Sidebar component that receives posts as props
 const Sidebar: React.FC<SidebarProps> = ({ posts }) => {
   return (
-    <aside className="w-1/4 bg-black pt-[30vh] fixed h-full text-white p-2 hidden lg:block">
+    <aside className="w-1/4 bg-black pt-[30vh] md:pt-[7vh] fixed h-full text-white p-2 hidden lg:block">
       <h2 className="text-lg font-bold mb-4">Recent Posts</h2>
       <ul className="space-y-2">
         {posts.map((post, index) => (
