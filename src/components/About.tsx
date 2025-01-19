@@ -90,7 +90,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ images }) => {
   </div>
   {/* Holographic Visual Element */}
   <div className="holographic-overlay w-full mt-4 p-4 bg-gradient-to-r from-black via-green-900 to-purple-700 animate-glow rounded-lg shadow-lg">
-    <p className="text-center font-mono text-md text-white">
+    <p className="text-center text-md text-white">
       Join MemeLinked and explore the future where memes, finance, and gaming merge seamlessly into one ecosystem.
     </p>
   </div>

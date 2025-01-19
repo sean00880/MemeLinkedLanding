@@ -72,7 +72,7 @@ const HeroSection: React.FC = () => {
 
           {/* Contract Address */}
           <div className="mb-6">
-            <div className="bg-white text-black px-4 py-2 rounded-lg font-mono text-md font-bold shadow-inner">
+            <div className="bg-white text-black px-4 py-2 rounded-lg text-md font-bold shadow-inner">
               0xMemeLinkedContractAddress
             </div>
             <p className="text-md text-gray-400 mt-2">Official Contract Address</p>

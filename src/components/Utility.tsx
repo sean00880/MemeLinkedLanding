@@ -67,7 +67,7 @@ const UtilitySection: React.FC = () => {
 
         {/* Bottom Visual */}
         <div className="mt-12 p-4 text-center text-black bg-gradient-to-r from-green-400 to-purple-400 rounded-lg shadow-lg animate-glow">
-          <p className="text-md font-mono glitch-text">
+          <p className="text-md glitch-text">
             MemeLinked: Revolutionizing blockchain utilities with creativity and
             precision.
           </p>

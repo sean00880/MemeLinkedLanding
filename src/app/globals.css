@@ -7,7 +7,7 @@
 /* Font Imports */
 @font-face {
   font-family: 'Barlow';
-  src: url('/fonts/Barlow-Regular.otf') format('opentype');
+  src: url('/fonts/BarlowCondensed-LightItalic.ttf') format('truetype');
   font-weight: normal;
 }
 
@@ -137,7 +137,7 @@ select, textarea{
 
 @font-face{
   font-family: 'Rushblade';
-  src: url('/fonts/Rushblade.ttf');
+  src: url('https://res.cloudinary.com/dlgaxtbuf/raw/upload/v1737315870/Rushblade_uag4e0.ttf');
   font-weight: normal;
 }
 h1, h2 {
@@ -220,7 +220,7 @@ span, button{
 }
 p, li{
   font-size: 1.2rem;
-  font-family: 'titillium web';
+  font-family: 'Roboto';
 }
 
 table td{
