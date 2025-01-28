@@ -20,32 +20,11 @@ const HeroSection: React.FC = () => {
 
       {/* Main Content Container */}
       <div className="relative z-10 mt-20 md:mt-0 min-h-screen flex flex-col md:flex-row items-center justify-center w-full max-w-7xl px-6 md:px-12 space-y-8 md:space-y-0 md:space-x-8">
-        {/* Left Column: Presale Widget */}
-        <div
-    className="presale-widget flex flex-col justify-center items-center p-8 bg-white/90 backdrop-blur-lg rounded-xl shadow-xl text-center w-full md:w-1/2"
-    style={{
-      boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.6), inset 0px 1px 2px rgba(255, 255, 255, 0.1)", // Neumorphic shadow for the card
-    }}
-  >
-    {/* Title */}
-    <h2 className="text-3xl mb-4 text-black">Join the Presale</h2>
-    {/* Description */}
-    <p className="text-black mb-6 text-lg">
-      Be part of the revolution. Buy MemeLinked tokens and shape the future!
-    </p>
-    {/* Button with Next.js Link and legacyBehavior */}
-    <Link href="https://mkpresale.com" legacyBehavior>
-      <a
-        className="px-8 py-3 bg-gradient-to-r from-green-400 to-purple-500 text-white font-bold rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition-transform"
-      >
-        Join Now
-      </a>
-    </Link>
-  </div>
+   
 
         {/* Right Column: Project Info + Socials */}
         <div
-          className="project-info flex flex-col justify-center items-center p-8 bg-black/90 backdrop-blur-xl rounded-xl shadow-xl text-center w-full md:w-1/2"
+          className="project-info flex flex-col justify-center items-center p-8 bg-black/90 backdrop-blur-xl rounded-xl shadow-xl text-center w-full"
           style={{
             boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.6), inset 0px 1px 2px rgba(38, 35, 35, 0.38)", // Neumorphic shadow for the card
           }}
