@@ -73,7 +73,7 @@ const HeroSection: React.FC = () => {
           {/* Contract Address */}
           <div className="mb-6">
             <div className="bg-white text-black px-4 py-2 rounded-lg text-md font-bold shadow-inner">
-              0xMemeLinkedContractAddress
+            0xb062444f2844ddc306533243d8f0a1f67e26fdb5
             </div>
             <p className="text-md text-gray-400 mt-2">Official Contract Address</p>
           </div>
@@ -98,7 +98,7 @@ const HeroSection: React.FC = () => {
                 className="socials border-2 border-green-400 hover:scale-110 hover:drop-shadow-lg transition-transform rounded-full"
               />
             </Link>
-            <Link href="https://www.dextools.io/app/en/ether/pair-explorer/memelinked">
+            <Link href="https://www.dextools.io/app/en/ether/pair-explorer/0xb062444f2844ddc306533243d8f0a1f67e26fdb5?t=1738108551755">
               <Image
                 src="/icons/dextools.png"
                 width={50}
@@ -107,7 +107,7 @@ const HeroSection: React.FC = () => {
                 className="socials border-2 border-purple-400 hover:scale-110 hover:drop-shadow-lg transition-transform rounded-full"
               />
             </Link>
-            <Link href="https://dexscreener.com/ethereum/memelinked">
+            <Link href="https://dexscreener.com/ethereum/0xb062444f2844ddc306533243d8f0a1f67e26fdb5">
               <Image
                 src="/icons/dexscreener.png"
                 width={50}

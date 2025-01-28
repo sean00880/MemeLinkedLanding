@@ -1,9 +1,7 @@
 "use client";
 // src/app/page.tsx
 import React, { useState } from "react";
-import Image from "next/image";
 import LandingLayout from "../components/LandingLayout";
-import Link from "next/link";
 import Footer from "../components/Footer";
 import AboutSection from "../components/About";
 import HeroSection from "@components/HeroSection";
