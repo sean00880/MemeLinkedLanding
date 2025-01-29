@@ -104,7 +104,7 @@ const HeroSection: React.FC = () => {
                 className="socials border-2 border-purple-400 hover:scale-110 hover:drop-shadow-lg transition-transform rounded-full"
               />
             </Link>
-            <Link href="https://tickertrending.com/memelinked">
+            <Link href="https://www.tickertrending.com/ticker/MK">
               <Image
                 src="/icons/TickerTrending.jpg"
                 width={50}
