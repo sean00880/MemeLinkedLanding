@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
         </h1>
           {/* Description */}
           <p className="text-gray-300 mb-4">
-            A DeFi project on Ethereum, part of the Monkey Sol Inu ecosystem,
+            A DeFi project on Ethereum,
             where memes meet social media.
           </p>
 
