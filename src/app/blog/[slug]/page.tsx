@@ -137,7 +137,7 @@ const posts = [
           <h1 className="text-5xl font-extrabold mb-4 text-white">GameFi's Role in the MemeLinked Ecosystem</h1>
           <div className="w-full h-[2px] bg-yellow-500 mb-6"></div>
           <p className="text-lg mb-6 text-gray-200">
-            The intersection of gaming and decentralized finance (DeFi) has given rise to GameFi, a transformative force in the crypto ecosystem. MemeLinked leverages GameFi to provide immersive, rewarding experiences for users and to foster deeper engagement within its network. This strategic approach is part of the broader MSI ecosystem, where innovation meets entertainment and financial gain.
+            The intersection of gaming and decentralized finance (DeFi) has given rise to GameFi, a transformative force in the crypto ecosystem. MemeLinked leverages GameFi to provide immersive, rewarding experiences for users and to foster deeper engagement within its network. This strategic approach is part of the broader MemeLinked ecosystem, where innovation meets entertainment and financial gain.
           </p>
           <Image
             src="/images/ML11.webp"
@@ -163,20 +163,20 @@ const posts = [
               <div className="w-1/2 h-[2px] bg-yellow-500 mb-4"></div>
               <ol className="list-none space-y-4 text-gray-200 text-lg">
                 <li>
-                  <strong>Interactive Mini-Games:</strong> These games provide users with opportunities to earn $MSI tokens while enjoying an engaging gameplay experience. The mini-games are designed to be both fun and rewarding, promoting sustained interaction.
+                  <strong>Interactive Mini-Games:</strong> These games provide users with opportunities to earn $MEMELINKED tokens while enjoying an engaging gameplay experience. The mini-games are designed to be both fun and rewarding, promoting sustained interaction.
                 </li>
                 <li>
                   <strong>Community-Centric Marketing Missions:</strong> GameFi within MemeLinked incorporates specific marketing missions. Users can participate in these missions to promote the ecosystem, share content, and earn rewards in return.
                 </li>
                 <li>
-                  <strong>Strategic Collaborations:</strong> By collaborating with partner projects, MemeLinked expands its GameFi offerings, creating a multifaceted experience where users can earn various partner tokens in addition to $MSI.
+                  <strong>Strategic Collaborations:</strong> By collaborating with partner projects, MemeLinked expands its GameFi offerings, creating a multifaceted experience where users can earn various partner tokens in addition to $MEMELINKED.
                 </li>
               </ol>
             </div>
           </div>
 
           <p className="text-lg mt-6 text-gray-200">
-            The inclusion of GameFi in MemeLinked provides a dual benefit: fostering an enjoyable user experience while driving the growth of the MSI ecosystem through active participation. This integration helps position MemeLinked as a frontrunner in combining social interaction with financial empowerment.
+            The inclusion of GameFi in MemeLinked provides a dual benefit: fostering an enjoyable user experience while driving the growth of the MemeLinked ecosystem through active participation. This integration helps position MemeLinked as a frontrunner in combining social interaction with financial empowerment.
           </p>
 
           <div className="relative overflow-hidden mt-8 mb-8 flex flex-row items-center">

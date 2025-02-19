@@ -36,7 +36,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ images }) => {
         <h2 className="text-4xl font-bold mb-6 text-center">About</h2>
         <div className="divider h-1 bg-green-500 mb-8 mx-auto w-full left-0"></div>
         <p className="text-lg mb-4 text-center md:text-left text-gray-200">
-          MemeLinked is more than just a token; it&apos;s a unique blend of meme culture and utility within the MSI ecosystem.
+          MemeLinked is more than just a token; it&apos;s a unique blend of meme culture and utility within the digital space.
           Founded by the visionary Pablo Cro, MemeLinked offers an engaging social network that fuels organic growth and
           exposure for real projects. Our platform bridges the gap between fun and functionality, empowering users to
           connect in a space where communities thrive and opportunities abound.
@@ -77,7 +77,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ images }) => {
       <ul className="list-disc pl-4 mt-2 text-gray-700 text-md">
         <li>Simple Yet Addictive Games</li>
         <li>Marketing Missions</li>
-        <li>Earn MSI and Partner Tokens</li>
+        <li>Earn MK and Partner Tokens</li>
       </ul>
     </div>
     {/* Memes */}
@@ -200,7 +200,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ images }) => {
                <div className="md:w-1/2 md:pr-8 mb-4 md:mb-0">
                  <h3 className="text-3xl font-bold text-green-500 mb-4">Introducing TAP to EARN</h3>
                  <p className="text-gray-300">
-                   $MSI is about to launch TAP to EARN mini-games, offering a new way for users to earn $MSI tokens and future
+                   $MK is about to launch TAP to EARN mini-games, offering a new way for users to earn $MK tokens and future
                    partner tokens. These games are designed to engage the community and introduce a new dimension of fun.
                  </p>
                </div>
@@ -224,10 +224,10 @@ const AboutSection: React.FC<AboutSectionProps> = ({ images }) => {
                      <strong>Simple Yet Addictive Games</strong>: These mini-games are quick, engaging, and easy to play.
                    </li>
                    <li className="mb-2">
-                     <strong>Marketing Missions</strong>: Complete missions tied to MSI's marketing efforts for rewards.
+                     <strong>Marketing Missions</strong>: Complete missions tied to MK's marketing efforts for rewards.
                    </li>
                    <li>
-                     <strong>Earn $MSI and Partner Tokens</strong>: Complete missions to earn $MSI and future partner tokens.
+                     <strong>Earn $MK and Partner Tokens</strong>: Complete missions to earn $MK and future partner tokens.
                    </li>
                  </ul>
                </div>
