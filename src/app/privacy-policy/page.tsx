@@ -18,13 +18,13 @@ export default function PrivacyPolicy() {
 
         {/* Main Content */}
         <div className="max-w-4xl mx-auto bg-[#111111] rounded-2xl p-6 sm:p-8 lg:p-10 shadow-xl space-y-10">
-          <section className="border-b border-gray-800 pb-8">
+          <section className="border-b border-gray-800 pb-8 flex flex-col">
             <p className="text-gray-300 text-lg leading-relaxed">
               Welcome to MemeLinked. We are committed to protecting your privacy and ensuring the security of your personal information.
             </p>
           </section>
 
-          <section className="border-b border-gray-800 pb-8">
+          <section className="border-b border-gray-800 pb-8 flex flex-col">
             <h2 className="text-3xl font-semibold mb-6 text-green-400">Information We Collect</h2>
             <div className="space-y-6 text-gray-300">
               <p>We collect information that you provide directly to us, including:</p>
@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
             </div>
           </section>
 
-          <section className="border-b border-gray-800 pb-8">
+          <section className="border-b border-gray-800 pb-8 flex flex-col">
             <h2 className="text-3xl font-semibold mb-6 text-green-400">How We Use Your Information</h2>
             <div className="space-y-6 text-gray-300">
               <p>We use the collected information for:</p>
@@ -59,14 +59,14 @@ export default function PrivacyPolicy() {
             </div>
           </section>
 
-          <section className="border-b border-gray-800 pb-8">
+          <section className="border-b border-gray-800 pb-8 flex flex-col">
             <h2 className="text-3xl font-semibold mb-6 text-green-400">Data Security</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
               We implement appropriate technical and organizational security measures to protect your information. However, no electronic transmission or storage system is 100% secure, and we cannot guarantee absolute security.
             </p>
           </section>
 
-          <section className="border-b border-gray-800 pb-8">
+          <section className="border-b border-gray-800 pb-8 flex flex-col">
             <h2 className="text-3xl font-semibold mb-6 text-green-400">DeFi Integration and Third-Party Services</h2>
             <div className="space-y-6 text-gray-300">
               <p>Our platform integrates with various DeFi protocols and blockchain networks. Please note:</p>
@@ -80,7 +80,7 @@ export default function PrivacyPolicy() {
             </div>
           </section>
 
-          <section className="border-b border-gray-800 pb-8">
+          <section className="border-b border-gray-800 pb-8 flex flex-col">
             <h2 className="text-3xl font-semibold mb-6 text-green-400">Content Privacy</h2>
             <div className="space-y-6 text-gray-300">
               <p>Regarding content shared on our social media platform:</p>
@@ -94,14 +94,14 @@ export default function PrivacyPolicy() {
             </div>
           </section>
 
-          <section className="border-b border-gray-800 pb-8">
+          <section className="border-b border-gray-800 pb-8 flex flex-col">
             <h2 className="text-3xl font-semibold mb-6 text-green-400">Cookies and Tracking</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
               We use cookies and similar tracking technologies to enhance your experience. You can control cookie settings through your browser preferences.
             </p>
           </section>
 
-          <section className="border-b border-gray-800 pb-8">
+          <section className="border-b border-gray-800 pb-8 flex flex-col">
             <h2 className="text-3xl font-semibold mb-6 text-green-400">Your Rights</h2>
             <div className="space-y-6 text-gray-300">
               <p>You have the right to:</p>
@@ -115,7 +115,7 @@ export default function PrivacyPolicy() {
             </div>
           </section>
 
-          <section className="border-b border-gray-800 pb-8">
+          <section className="border-b border-gray-800 pb-8 flex flex-col">
             <h2 className="text-3xl font-semibold mb-6 text-green-400">Changes to Privacy Policy</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
               We may update this privacy policy periodically. We will notify you of any material changes by posting the new policy on this page.
