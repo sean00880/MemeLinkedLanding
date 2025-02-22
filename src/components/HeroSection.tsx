@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
   // Fetch supply data (client-side)
   const fetchSupplyData = async () => {
     const provider = new ethers.JsonRpcProvider(
-      `https://mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_API_KEY}`
+      `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`
     );
     const tokenAddress = "0xca76bf98b6e44df7360da8650e701f6d9d94bb58"; // ERC-20 token address
     const burnAddress = "0x000000000000000000000000000000000000dead"; // Common burn address
