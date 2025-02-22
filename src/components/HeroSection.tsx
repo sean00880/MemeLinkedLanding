@@ -118,7 +118,7 @@ const HeroSection: React.FC = () => {
               {/* Token Contract Address (Above Stats) */}
               <div className="mb-4 text-center">
                 <p className="text-sm text-gray-200 mb-2">$MK Contract Address</p>
-                <div className="bg-white text-black py-1 rounded-md text-[12px] md:text-sm font-mono truncate mx-auto w-fit">
+                <div className="bg-white text-black py-1 px-1 rounded-md text-[12px] md:text-sm font-mono truncate mx-auto w-fit">
                   0xca76bf98b6e44df7360da8650e701f6d9d94bb58
                 </div>
               </div>
