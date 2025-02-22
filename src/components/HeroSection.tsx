@@ -114,11 +114,11 @@ const HeroSection: React.FC = () => {
 
           {/* Token Info Widget */}
           <div className="mb-6 w-full max-w-4xl">
-            <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-lg p-4 shadow-lg">
+            <div className="bg-gradient-to-r from-gray-900 to-gray-900 border border-gray-700 rounded-lg p-2 shadow-lg">
               {/* Token Contract Address (Above Stats) */}
               <div className="mb-4 text-center">
                 <p className="text-sm text-gray-200 mb-2">$MK Contract Address</p>
-                <div className="bg-white text-black px-3 py-1 rounded-md text-[10px] md:text-sm font-mono truncate mx-auto w-fit">
+                <div className="bg-white text-black py-1 rounded-md text-[12px] md:text-sm font-mono truncate mx-auto w-fit">
                   0xca76bf98b6e44df7360da8650e701f6d9d94bb58
                 </div>
               </div>
