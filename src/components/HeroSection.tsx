@@ -84,7 +84,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent bg-opacity-90"></div>
 
       {/* Main Content Container */}
-      <div className="relative z-10 mt-20 md:mt-0 min-h-screen flex flex-col md:flex-row items-center justify-center w-full max-w-7xl px-6 md:px-12 space-y-8 md:space-y-0 md:space-x-8">
+      <div className="relative z-10 md:mt-0 min-h-screen flex flex-col md:flex-row items-center justify-center w-full max-w-7xl px-6 md:px-12 space-y-8 md:space-y-0 md:space-x-8">
         {/* Right Column: Project Info + Socials */}
         <div
           className="project-info flex flex-col justify-center items-center p-8 bg-black/90 backdrop-blur-xl rounded-xl shadow-xl text-center w-full"
