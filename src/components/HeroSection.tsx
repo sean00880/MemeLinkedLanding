@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
   // Fetch supply data (client-side)
   const fetchSupplyData = async () => {
     const provider = new ethers.JsonRpcProvider(
-      `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`
+      `https://mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_API_KEY}`
     );
     const tokenAddress = "0xca76bf98b6e44df7360da8650e701f6d9d94bb58"; // ERC-20 token address
     const burnAddress = "0x000000000000000000000000000000000000dead"; // Common burn address
@@ -114,98 +114,99 @@ const HeroSection: React.FC = () => {
 
           {/* Token Info Widget */}
           <div className="mb-6 w-full max-w-4xl">
-  <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-lg p-4 shadow-lg">
-    {/* Token Contract Address (Above Stats) */}
-    <div className="mb-4 text-center">
-      <p className="text-sm text-gray-200 mb-2">$MK Contract Address</p>
-      <div className="bg-white text-black px-3 py-1 rounded-md text-sm font-mono truncate mx-auto w-fit">
-        0xca76bf98b6e44df7360da8650e701f6d9d94bb58
-      </div>
-    </div>
+            <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-lg p-4 shadow-lg">
+              {/* Token Contract Address (Above Stats) */}
+              <div className="mb-4 text-center">
+                <p className="text-sm text-gray-200 mb-2">$MK Contract Address</p>
+                <div className="bg-white text-black px-3 py-1 rounded-md text-sm font-mono truncate mx-auto w-fit">
+                  0xca76bf98b6e44df7360da8650e701f6d9d94bb58
+                </div>
+              </div>
 
-    <div className="flex flex-row items-center justify-center space-x-6">
-      {/* Total Supply */}
-      <div className="flex-shrink-0 text-center">
-        <p className="text-sm text-gray-200">Total Supply</p>
-        <div className="mt-2">
-          <span className="text-xl font-bold text-blue-400">
-            {totalSupply ? (
-              <CountUp
-                start={0}
-                end={Number(totalSupply)}
-                decimals={2}
-                duration={2.5}
-                formattingFn={(value) => value.toLocaleString()}
-              />
-            ) : (
-              "Fetching..."
-            )}
-          </span>
-          <span className="ml-1 text-gray-300">Tokens</span>
-        </div>
-      </div>
+              {/* Stats (Horizontal on large screens, stacked on small screens) */}
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                {/* Total Supply */}
+                <div className="flex-shrink-0 text-center">
+                  <p className="text-sm text-gray-200">Total Supply</p>
+                  <div className="mt-2">
+                    <span className="text-xl font-bold text-blue-400">
+                      {totalSupply ? (
+                        <CountUp
+                          start={0}
+                          end={Number(totalSupply)}
+                          decimals={2}
+                          duration={2.5}
+                          formattingFn={(value) => value.toLocaleString()}
+                        />
+                      ) : (
+                        "Fetching..."
+                      )}
+                    </span>
+                    <span className="ml-1 text-gray-300">Tokens</span>
+                  </div>
+                </div>
 
-      {/* Divider 1 */}
-      <div className="border-l border-gray-600 h-12"></div>
+                {/* Divider (Visible on larger screens only) */}
+                <div className="hidden sm:block border-l border-gray-600 h-12"></div>
 
-      {/* Circulating Supply */}
-      <div className="flex-shrink-0 text-center">
-        <p className="text-sm text-gray-200">Circulating Supply</p>
-        <div className="mt-2">
-          <span className="text-xl font-bold text-green-400">
-            {circulatingSupply ? (
-              <CountUp
-                start={0}
-                end={Number(circulatingSupply)}
-                decimals={2}
-                duration={2.5}
-                formattingFn={(value) => value.toLocaleString()}
-              />
-            ) : (
-              "Fetching..."
-            )}
-          </span>
-          <span className="ml-1 text-gray-300">Tokens</span>
-        </div>
-      </div>
+                {/* Circulating Supply */}
+                <div className="flex-shrink-0 text-center">
+                  <p className="text-sm text-gray-200">Circulating Supply</p>
+                  <div className="mt-2">
+                    <span className="text-xl font-bold text-green-400">
+                      {circulatingSupply ? (
+                        <CountUp
+                          start={0}
+                          end={Number(circulatingSupply)}
+                          decimals={2}
+                          duration={2.5}
+                          formattingFn={(value) => value.toLocaleString()}
+                        />
+                      ) : (
+                        "Fetching..."
+                      )}
+                    </span>
+                    <span className="ml-1 text-gray-300">Tokens</span>
+                  </div>
+                </div>
 
-      {/* Divider 2 */}
-      <div className="border-l border-gray-600 h-12"></div>
+                {/* Divider (Visible on larger screens only) */}
+                <div className="hidden sm:block border-l border-gray-600 h-12"></div>
 
-      {/* Burned Supply */}
-      <div className="flex-shrink-0 text-center">
-        <p className="text-sm text-gray-200">Burned Supply</p>
-        <div className="mt-2">
-          <span className="text-xl font-bold text-red-400">
-            {burnedSupply ? (
-              <CountUp
-                start={0}
-                end={Number(burnedSupply)}
-                decimals={2}
-                duration={2.5}
-                formattingFn={(value) => value.toLocaleString()}
-              />
-            ) : (
-              "Fetching..."
-            )}
-          </span>
-          <span className="ml-1 text-gray-300">Tokens</span>
-        </div>
-      </div>
+                {/* Burned Supply */}
+                <div className="flex-shrink-0 text-center">
+                  <p className="text-sm text-gray-200">Burned Supply</p>
+                  <div className="mt-2">
+                    <span className="text-xl font-bold text-red-400">
+                      {burnedSupply ? (
+                        <CountUp
+                          start={0}
+                          end={Number(burnedSupply)}
+                          decimals={2}
+                          duration={2.5}
+                          formattingFn={(value) => value.toLocaleString()}
+                        />
+                      ) : (
+                        "Fetching..."
+                      )}
+                    </span>
+                    <span className="ml-1 text-gray-300">Tokens</span>
+                  </div>
+                </div>
 
-      {/* Divider 3 */}
-      <div className="border-l border-gray-600 h-12"></div>
+                {/* Divider (Visible on larger screens only) */}
+                <div className="hidden sm:block border-l border-gray-600 h-12"></div>
 
-      {/* Burned Supply Percentage */}
-      <div className="flex-shrink-0 text-center">
-        <p className="text-sm text-gray-200">Burned Supply (% of Total)</p>
-        <span className="text-lg font-bold text-yellow-400">
-          {burnedPercentage ? `${burnedPercentage}%` : "Fetching..."}
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
+                {/* Burned Supply Percentage */}
+                <div className="flex-shrink-0 text-center">
+                  <p className="text-sm text-gray-200">Burned Supply (% of Total)</p>
+                  <span className="text-lg font-bold text-yellow-400">
+                    {burnedPercentage ? `${burnedPercentage}%` : "Fetching..."}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Social Media Links */}
           <div className="flex space-x-4">
