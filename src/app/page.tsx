@@ -1,6 +1,5 @@
-"use client";
 // src/app/page.tsx
-import React, { useState } from "react";
+import React from "react";
 import LandingLayout from "../components/LandingLayout";
 import Footer from "../components/Footer";
 import AboutSection from "../components/About";
@@ -11,7 +10,13 @@ import Roadmap from "@components/Roadmap";
 import Resources from "@components/Resources";
 import CarouselSection from "@components/Carousel";
 
-const features = [
+// Static data: Features
+const features: Array<{
+  title: string;
+  shortText: string;
+  expandedText: string;
+  image: string;
+}> = [
   {
     title: "The Ultimate Lifeform",
     shortText: "MemeLinked leads the Meme Space with unmatched power.",
@@ -35,20 +40,20 @@ const features = [
   },
 ];
 
+// Static data: Images
+const images: string[] = [
+  "/images/ML2.webp",
+  "/images/ML11.webp",
+  "/images/ML4.png",
+  "/images/ML5.png",
+  "/images/ML8.png",
+];
 
-const HomePage: React.FC = () => {
-  const [activeTab, setActiveTab] = useState("blog"); // This is for the Blog/Documentation section
-  const images = [
-    "/images/ML2.webp",
-    "/images/ML11.webp",
-    "/images/ML4.png",
-    "/images/ML5.png",
-    "/images/ML8.png",
-  ];
-
+// Server Component (App Router)
+export default function HomePage() {
   return (
     <LandingLayout>
-      {/* Hero Section */}
+      {/* Hero Section handles its own token supply fetching and animation */}
       <HeroSection />
 
       {/* About Section */}
@@ -67,10 +72,7 @@ const HomePage: React.FC = () => {
 
       <Resources />
 
-
       <Footer />
     </LandingLayout>
   );
-};
-
-export default HomePage;
+}
