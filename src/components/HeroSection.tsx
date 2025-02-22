@@ -114,7 +114,7 @@ const HeroSection: React.FC = () => {
 
           {/* Token Info Widget */}
           <div className="mb-6 w-full max-w-4xl">
-            <div className="bg-gradient-to-r from-gray-900 to-gray-900 border border-gray-700 rounded-lg p-2 shadow-lg">
+            <div className="bg-gradient-to-r from-gray-900 to-gray-900 border border-gray-300 rounded-lg p-2 shadow-lg">
               {/* Token Contract Address (Above Stats) */}
               <div className="mb-4 text-center">
                 <p className="text-sm text-gray-200 mb-2">$MK Contract Address</p>
