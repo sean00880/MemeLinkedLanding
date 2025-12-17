@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import { LandingThemeProvider } from './context/LandingThemeProvider';
-import './landing.css';
+import { LandingThemeProvider } from '../context/LandingThemeProvider';
+import '../landing.css';
 
 export const metadata: Metadata = {
   title: 'MemeLinked - Where Memes Meet DeFi | Social Media & Trading Platform',
@@ -28,14 +28,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function LandingLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <LandingThemeProvider defaultTheme="dark">
-      {children}
-    </LandingThemeProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <LandingThemeProvider defaultTheme="dark">
+          {children}
+        </LandingThemeProvider>
+      </body>
+    </html>
   );
 }

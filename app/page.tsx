@@ -1,15 +1,15 @@
 import { Suspense } from 'react';
-import LandingHeader from './components/LandingHeader';
-import LandingHero from './components/LandingHero';
-import LogoCloud from './components/LogoCloud';
-import Features from './components/Features';
-import PlatformShowcase from './components/PlatformShowcase';
-import TokenStats from './components/TokenStats';
-import HowItWorks from './components/HowItWorks';
-import Tokenomics from './components/Tokenomics';
-import Roadmap from './components/Roadmap';
-import CallToAction from './components/CallToAction';
-import LandingFooter from './components/LandingFooter';
+import LandingHeader from '../components/LandingHeader';
+import LandingHero from '../components/LandingHero';
+import LogoCloud from '../components/LogoCloud';
+import Features from '../components/Features';
+import PlatformShowcase from '../components/PlatformShowcase';
+import TokenStats from '../components/TokenStats';
+import HowItWorks from '../components/HowItWorks';
+import Tokenomics from '../components/Tokenomics';
+import Roadmap from '../components/Roadmap';
+import CallToAction from '../components/CallToAction';
+import LandingFooter from '../components/LandingFooter';
 
 /**
  * MemeLinked Landing Page
