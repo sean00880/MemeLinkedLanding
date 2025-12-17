@@ -48,7 +48,7 @@ const tokenDetails = [
 
 export default function Tokenomics() {
   return (
-    <section id="tokenomics" className="py-20 relative">
+    <section id="tokenomics" className="min-h-screen py-20 relative flex flex-col justify-center">
       {/* Background */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/4 left-0 w-72 h-72 bg-[var(--ml-green)] rounded-full blur-[100px]" />

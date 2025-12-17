@@ -74,7 +74,7 @@ const roadmapData: RoadmapPhase[] = [
 
 export default function Roadmap() {
   return (
-    <section id="roadmap" className="py-20 relative overflow-hidden">
+    <section id="roadmap" className="min-h-screen py-20 relative overflow-hidden flex flex-col justify-center">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl">

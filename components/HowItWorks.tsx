@@ -58,7 +58,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="min-h-screen py-20 relative overflow-hidden flex flex-col justify-center">
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[var(--ml-purple)]/10 rounded-full blur-3xl" />

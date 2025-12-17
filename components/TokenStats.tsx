@@ -117,7 +117,7 @@ export default function TokenStats() {
   ];
 
   return (
-    <section id="about" className="py-16 relative">
+    <section id="about" className="min-h-screen py-16 relative flex flex-col justify-center">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">

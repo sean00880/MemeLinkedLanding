@@ -181,7 +181,7 @@ export default function Features() {
   const activeData = categories.find((c) => c.id === activeCategory) || categories[0];
 
   return (
-    <section id="features" className="py-20 relative overflow-hidden">
+    <section id="features" className="min-h-screen py-20 relative overflow-hidden flex flex-col justify-center">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[var(--ml-purple)]/5 to-transparent" />

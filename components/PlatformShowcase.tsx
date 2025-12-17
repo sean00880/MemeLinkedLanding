@@ -52,7 +52,7 @@ export default function PlatformShowcase() {
   const active = showcaseFeatures.find((f) => f.id === activeFeature) || showcaseFeatures[0];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="min-h-screen py-20 relative overflow-hidden flex flex-col justify-center">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-transparent" />
