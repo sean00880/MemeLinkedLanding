@@ -10,6 +10,7 @@ import Tokenomics from '../components/Tokenomics';
 import Roadmap from '../components/Roadmap';
 import CallToAction from '../components/CallToAction';
 import LandingFooter from '../components/LandingFooter';
+import { LandingEffects } from '../components/LandingEffects';
 
 /**
  * MemeLinked Landing Page
@@ -22,7 +23,15 @@ import LandingFooter from '../components/LandingFooter';
  */
 export default function LandingPage() {
   return (
-    <main className="min-h-screen bg-[hsl(var(--background))] text-[hsl(var(--foreground))]">
+    <main className="min-h-screen bg-[hsl(var(--background))] text-[hsl(var(--foreground))] relative">
+      {/* Background Effects - ElectricGrid + ParticleSystem */}
+      <LandingEffects
+        showGrid={true}
+        showParticles={true}
+        gridIntensity="subtle"
+        particleCount={25}
+      />
+
       {/* Navigation Header */}
       <LandingHeader />
 
