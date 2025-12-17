@@ -1,23 +1,30 @@
-// tailwind.config.js
-module.exports = {
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './src/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './context/**/*.{js,ts,jsx,tsx}',
+    './page.tsx',
+    './layout.tsx',
   ],
   theme: {
     extend: {
       colors: {
-        primary: "#00FF88", // Neon blue
-        background: "#111111", // Dark background
-        secondary: "#00FF88", // Adjust as needed for holographic look
-        card: "rgba(255, 255, 255, 0.1)", // Semi-transparent for glass effect
+        primary: '#00FF88',
+        background: '#111111',
+        secondary: '#00FF88',
+        card: 'rgba(255, 255, 255, 0.1)',
       },
       backdropBlur: {
-        glass: "20px",
+        glass: '20px',
       },
       fontFamily: {
-        sans: ['"Roboto Mono"', "monospace"], // Monospaced font for a techy look
+        sans: ['"Roboto Mono"', 'monospace'],
       },
     },
   },
   plugins: [],
 };
+
+export default config;

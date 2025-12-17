@@ -1,8 +1,5 @@
-/* globals.css */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* globals.css - Tailwind 4 */
+@import "tailwindcss";
 
 /* Font Imports */
 @font-face {
