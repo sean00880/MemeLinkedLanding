@@ -1,5 +1,11 @@
-/* MEMELinked Landing Page - Scoped Styles */
-/* This file provides CSS variable isolation for the landing page */
+/* MEMELinked Landing Page - Tailwind 4 + Scoped Styles */
+
+/* Tailwind v4 - load config and import tailwind */
+@config "./tailwind.config.ts";
+@import 'tailwindcss';
+
+/* Custom dark variant for theme support */
+@custom-variant dark (&:is(.dark *));
 
 /* Landing scope - isolates theme variables from main app */
 .landing-scope {
