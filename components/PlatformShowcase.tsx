@@ -156,7 +156,7 @@ export default function PlatformShowcase() {
 
               {/* Try Now Button */}
               <Link
-                href="/"
+                href="https://memelinked.com"
                 className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white transition-all hover:scale-105"
                 style={{ backgroundColor: active.color }}
               >

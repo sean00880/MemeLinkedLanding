@@ -7,7 +7,7 @@ const footerLinks = {
   product: {
     title: 'Product',
     links: [
-      { label: 'Launch App', href: '/' },
+      { label: 'Launch App', href: 'https://memelinked.com' },
       { label: 'Features', href: '#features' },
       { label: 'Tokenomics', href: '#tokenomics' },
       { label: 'Roadmap', href: '#roadmap' },

@@ -95,7 +95,7 @@ export default function HowItWorks() {
         <div className="mt-12 text-center">
           <p className="text-gray-400 mb-4">Ready to join the crypto social revolution?</p>
           <a
-            href="/"
+            href="https://memelinked.com"
             className="inline-flex items-center gap-2 gradient-btn px-8 py-3 rounded-xl font-semibold text-white hover:shadow-lg hover:shadow-[var(--ml-green)]/20 transition-all group"
           >
             <Sparkles className="w-5 h-5" />

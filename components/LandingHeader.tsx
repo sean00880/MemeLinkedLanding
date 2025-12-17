@@ -88,7 +88,7 @@ export default function LandingHeader() {
               </Link>
             ))}
             <Link
-              href="/"
+              href="https://memelinked.com"
               className="gradient-btn px-4 py-2 rounded-lg text-sm font-semibold text-white hover:shadow-lg transition-all"
             >
               Launch App
@@ -143,7 +143,7 @@ export default function LandingHeader() {
                 ))}
               </div>
               <Link
-                href="/"
+                href="https://memelinked.com"
                 className="gradient-btn mx-4 py-3 rounded-lg text-center font-semibold text-white"
               >
                 Launch App

@@ -53,7 +53,7 @@ export default function CallToAction() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            href="/"
+            href="https://memelinked.com"
             className="gradient-btn px-8 py-4 rounded-xl font-semibold text-white flex items-center gap-2 hover:shadow-lg hover:shadow-[var(--ml-green)]/20 transition-all group w-full sm:w-auto justify-center"
           >
             <Play className="w-5 h-5" />
