@@ -1,0 +1,334 @@
+/* MEMELinked Landing Page - Scoped Styles */
+/* This file provides CSS variable isolation for the landing page */
+
+/* Landing scope - isolates theme variables from main app */
+.landing-scope {
+  /* Tailark Dusk base (dark-mode-first) */
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 5%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 5%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 142 76% 36%; /* MEMELinked green */
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 14.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 142 76% 36%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  --ring: 142 76% 36%;
+  --radius: 0.5rem;
+
+  /* MEMELinked brand colors */
+  --ml-green: #22c55e;
+  --ml-purple: #a855f7;
+  --ml-gold: #ffd700;
+  --ml-dark: #0a0a0a;
+  --ml-darker: #050505;
+}
+
+/* Light mode override (if needed) */
+.landing-scope[data-landing-theme="light"] {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 3.9%;
+  --primary: 142 76% 36%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 96.1%;
+  --secondary-foreground: 0 0% 9%;
+  --muted: 0 0% 96.1%;
+  --muted-foreground: 0 0% 45.1%;
+  --accent: 142 76% 36%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 89.8%;
+  --input: 0 0% 89.8%;
+  --ring: 142 76% 36%;
+}
+
+/* Base styles for landing scope */
+.landing-scope {
+  min-height: 100vh;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Font imports for landing */
+@font-face {
+  font-family: 'Rushblade';
+  src: url('/fonts/Rushblade.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dragen';
+  src: url('/fonts/DragenDemoRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genty';
+  src: url('/fonts/Genty.otf') format('opentype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/fonts/BarlowCondensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+}
+
+/* Landing typography */
+.landing-scope h1,
+.landing-scope h2 {
+  font-family: 'Rushblade', sans-serif;
+}
+
+.landing-scope .meme-text {
+  font-family: 'Genty', sans-serif;
+}
+
+.landing-scope .linked-text {
+  font-family: 'Dragen', sans-serif;
+  letter-spacing: 5px;
+}
+
+/* Glitch animation for brand name */
+.landing-scope .animate-glitch {
+  position: relative;
+  display: inline-block;
+  color: rgb(232, 232, 232);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-family: 'Genty', sans-serif;
+  font-size: 47px;
+  margin: 0 5px;
+  font-weight: 200;
+}
+
+.landing-scope .animate-glitch2 {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-family: 'Dragen', sans-serif;
+  margin: 0 5px;
+  letter-spacing: 5px;
+}
+
+.landing-scope .animate-glitch::after,
+.landing-scope .animate-glitch::before {
+  content: 'Meme';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  clip: rect(0, 900px, 0, 0);
+}
+
+.landing-scope .animate-glitch2::after,
+.landing-scope .animate-glitch2::before {
+  content: 'LINKED';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  clip: rect(0, 900px, 0, 0);
+  letter-spacing: 5px;
+}
+
+.landing-scope .animate-glitch::after {
+  color: #e3ffdb;
+  animation: landing-glitch-anim 2s infinite linear alternate-reverse;
+}
+
+.landing-scope .animate-glitch2::after {
+  color: #8eee8e;
+  animation: landing-glitch-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes landing-glitch-anim {
+  0% {
+    clip: rect(42px, 9999px, 44px, 0);
+    transform: skew(0.3deg);
+  }
+  20% {
+    clip: rect(19px, 9999px, 62px, 0);
+    transform: skew(0.1deg);
+  }
+  40% {
+    clip: rect(40px, 9999px, 40px, 0);
+    transform: skew(0.5deg);
+  }
+  60% {
+    clip: rect(60px, 9999px, 80px, 0);
+    transform: skew(0.3deg);
+  }
+  80% {
+    clip: rect(20px, 9999px, 50px, 0);
+    transform: skew(0.6deg);
+  }
+  100% {
+    clip: rect(0, 9999px, 30px, 0);
+    transform: skew(0.5deg);
+  }
+}
+
+/* Glassmorphism effects */
+.landing-scope .glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.landing-scope .glass-dark {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Social icon styles */
+.landing-scope .social-icon {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 12px 0 rgba(240, 240, 240, 0.342);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+}
+
+.landing-scope .social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient button animation */
+@keyframes landing-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.landing-scope .gradient-btn {
+  background: linear-gradient(270deg, #22c55e, #313131, #a855f7, #313131);
+  background-size: 400% 400%;
+  animation: landing-gradient-shift 8s ease infinite;
+}
+
+/* Token stats widget */
+.landing-scope .token-stat {
+  background: linear-gradient(to bottom right, rgba(34, 197, 94, 0.1), rgba(168, 85, 247, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+}
+
+/* Section dividers */
+.landing-scope .section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+/* Hero background with fixed attachment */
+.landing-scope .hero-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Navigation bar fixed styling */
+.landing-scope .landing-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Prevent horizontal overflow */
+.landing-scope {
+  overflow-x: hidden;
+}
+
+.landing-scope * {
+  max-width: 100%;
+}
+
+/* Smooth scrolling for anchor links */
+.landing-scope {
+  scroll-behavior: smooth;
+}
+
+/* Logo pulse animation */
+@keyframes landing-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.landing-scope .logo-pulse {
+  animation: landing-pulse 2s ease-in-out infinite;
+}
+
+/* Fade in animation */
+@keyframes landing-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.landing-scope .fade-in {
+  animation: landing-fade-in 0.6s ease-out forwards;
+}
+
+/* Staggered fade in for lists */
+.landing-scope .stagger-fade > * {
+  opacity: 0;
+  animation: landing-fade-in 0.5s ease-out forwards;
+}
+
+.landing-scope .stagger-fade > *:nth-child(1) { animation-delay: 0.1s; }
+.landing-scope .stagger-fade > *:nth-child(2) { animation-delay: 0.2s; }
+.landing-scope .stagger-fade > *:nth-child(3) { animation-delay: 0.3s; }
+.landing-scope .stagger-fade > *:nth-child(4) { animation-delay: 0.4s; }
+.landing-scope .stagger-fade > *:nth-child(5) { animation-delay: 0.5s; }
+.landing-scope .stagger-fade > *:nth-child(6) { animation-delay: 0.6s; }
