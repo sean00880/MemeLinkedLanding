@@ -5,9 +5,6 @@ const nextConfig: NextConfig = {
     deviceSizes: [320, 420, 768, 1024, 1200],
     formats: ['image/avif', 'image/webp'],
   },
-  turbopack: {
-    root: process.cwd(),
-  },
   typescript: {
     ignoreBuildErrors: false,
   },
