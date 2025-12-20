@@ -265,7 +265,7 @@ export default function LandingHero() {
 
             {/* Token Benefits */}
             <div className="space-y-2 mb-6">
-              <TokenBenefit text="0% Buy/Sell Tax" />
+              <TokenBenefit text="0% Buy / 4% Sell Tax" />
               <TokenBenefit text="Locked Liquidity" />
               <TokenBenefit text="Audited Smart Contract" />
               <TokenBenefit text="Platform Utility Token" />

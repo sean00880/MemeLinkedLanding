@@ -42,7 +42,7 @@ const tokenDetails = [
   { label: 'Symbol', value: '$MK' },
   { label: 'Network', value: 'Ethereum' },
   { label: 'Total Supply', value: '1,000,000,000' },
-  { label: 'Tax', value: '0% Buy / 0% Sell' },
+  { label: 'Tax', value: '0% Buy / 4% Sell' },
   { label: 'LP Status', value: 'Locked 🔒' },
 ];
 
@@ -106,7 +106,7 @@ export default function Tokenomics() {
             <div className="mt-6 grid grid-cols-2 gap-4">
               <div className="bg-green-400/10 rounded-xl p-4 text-center">
                 <p className="text-2xl font-bold text-green-400">0%</p>
-                <p className="text-xs text-gray-400">Transaction Tax</p>
+                <p className="text-xs text-gray-400">Buy Tax</p>
               </div>
               <div className="bg-purple-400/10 rounded-xl p-4 text-center">
                 <p className="text-2xl font-bold text-purple-400">100%</p>
